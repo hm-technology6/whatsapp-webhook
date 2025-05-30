@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: whatsapp-webhook
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: VERIFY_TOKEN
+        value: "123456"
